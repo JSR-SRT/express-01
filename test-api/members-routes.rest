@@ -1,0 +1,26 @@
+### POST request to add new members
+POST http://localhost:3000/members
+Content-Type: application/json
+
+{
+    "name": "Jtwe",
+    "lastname": "Sr",
+    "position": "Software Developer"
+}
+
+### GET Request to read members
+GET http://localhost:3000/members
+
+### DELETE Request to delete members
+DELETE http://localhost:3000/members/4
+
+
+### PUT Request to update members
+PUT  http://localhost:3000/members/1
+Content-Type: application/json
+
+{
+    "name": "Hello",
+    "lastname": "JS",
+    "position": "Software Engineer"
+}
