@@ -2,7 +2,7 @@ import { Member } from "../../models/Member.js";
 
 // createMember
 export const createMember = async(req, res, next) => {
-    const{name, lastname, position = []} = req.body
+    const{name, lastname, position} = req.body
 
     if(!name || !lastname || !position) {
         const error = new Error("name, lastname and position are required!")
